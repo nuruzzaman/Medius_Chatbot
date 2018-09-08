@@ -38,7 +38,7 @@ AI Based chatbot using Python and AIML
 	$ python chaybot.py 
 	
 	> Kernel bootstrap completed
-	User > 
+	> User > 
     ```
 
 ## Screenshot 
