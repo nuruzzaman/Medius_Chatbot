@@ -81,7 +81,7 @@ Are you a smoker?
 <pattern>YES</pattern>
 <template>
 <think><set name="isSmoker">Smoker</set></think>
-You are a <get name="isSmoker"/> Enter "Done" for results. 
+You are a <get name="isSmoker"/>. Enter "Done" for results. 
 </template>
 </category>
 
