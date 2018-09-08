@@ -47,7 +47,7 @@ Nice to meet you, <get name="username"/>. Are you male or female?
 <template>
 <think><set name="gender">male</set></think>
 Thanks for telling me your gender, <get name="username"/>.
-When were you born? [Dated dd-mm-yyyy]
+When were you born?
 </template>
 </category>
 
@@ -56,7 +56,7 @@ When were you born? [Dated dd-mm-yyyy]
 <template>
 <think><set name="gender">female</set></think>
 Thanks for telling me your gender, <get name="username"/>.
-When were you born? [Dated dd-mm-yyyy]
+When were you born?
 </template>
 </category>
 
@@ -65,7 +65,7 @@ When were you born? [Dated dd-mm-yyyy]
 <template>
 <think><set name="gender">male</set></think>
 Thanks for telling me your gender, <get name="username"/>.
-When were you born? [Dated dd-mm-yyyy]
+When were you born?
 </template>
 </category>
 
@@ -74,12 +74,13 @@ When were you born? [Dated dd-mm-yyyy]
 <template>
 <think><set name="gender">female</set></think>
 Thanks for telling me your gender, <get name="username"/>.
-When were you born? [Dated dd-mm-yyyy]
+When were you born?
 </template>
 </category>
 
 <category>
-<pattern>DATED *</pattern>
+<pattern>*</pattern>
+<that>* WHEN WERE YOU BORN</that>
 <template>
 <think><set name="birthdate"><star /></set></think>
 Are you a smoker?
@@ -115,7 +116,7 @@ and is a <get name="gender"/>. He is a <get name="isSmoker"/>.
 <category>
 <pattern>BYE</pattern>
 <template>
-Have a good day. Bye 
+Have a good day. Good Bye :-) 
 </template>
 </category>
 
