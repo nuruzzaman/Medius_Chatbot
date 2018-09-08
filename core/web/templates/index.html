@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="AIML">
+    <meta name="keywords" content="Chatbot">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Medius Health Chatbot Demo</title>
+	
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/chat.js"></script>
+</head>
+
+<body>
+<div class="speak_window">
+    <div class="speak_box">
+        <div class="answer">
+            <div class="icon left"><img src="images/ai.png"></div>
+            <div class="answer_text">
+                <p>Hi I'm Medius. I'm here 24/7 to answer your questions.</p>				
+                <i></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="chat_box left">
+        <input type="text" onKeyUp="key_up()" placeholder="Enter your message here..."/>
+    </div>
+    <div class="rectangle right">
+        <button onClick="send_message()">Send</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $(document).keydown(function (event) {
+            if (event.keyCode == 13) {
+                send_message();
+            }
+        });
+
+        $('.chat_box input').focus();
+    });
+</script>
+
+</body>
+</html>

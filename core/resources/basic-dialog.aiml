@@ -1,0 +1,85 @@
+<aiml version="2.0">
+
+
+<category>
+<pattern>HELLO</pattern>
+<template>
+<condition>
+<li name="username" value="">Hello, I am going to ask you few questions that will help me know you better.</li>
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<template>
+What is your name? 
+</template>
+</category>
+
+<category>
+<pattern>MY NAME *</pattern>
+<template>
+<think><set name="username"><star /></set></think>
+Nice to meet you, <get name="username"/>. Are you male or female?
+</template>
+</category>
+
+<category>
+<pattern>* MALE</pattern>
+<template>
+<think><set name="gender">male</set></think>
+Thanks for telling me your gender, <get name="username"/>.
+When were you born? [Dated dd-mm-yyyy]
+</template>
+</category>
+
+<category>
+<pattern>* FEMALE</pattern>
+<template>
+<think><set name="gender">female</set></think>
+Thanks for telling me your gender, <get name="username"/>.
+When were you born? [Dated dd-mm-yyyy]
+</template>
+</category>
+
+<category>
+<pattern>DATED *</pattern>
+<template>
+<think><set name="birthdate"></set></think>
+Are you a smoker?
+</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<template>
+<think><set name="isSmoker">Smoker</set></think>
+You are a <get name="isSmoker"/> Enter "Done" for results. 
+</template>
+</category>
+
+<category>
+<pattern>NO</pattern>
+<template>
+<think><set name="isSmoker">Non-smoker</set></think>
+You are a <get name="isSmoker"/>. Enter "Done" for results. Thank you. 
+</template>
+</category>
+
+<category>
+<pattern>DONE</pattern>
+<template>
+Results: <get name="username"/> was born in <get name="birthdate"/> 
+and is a <get name="gender"/> <get name="isSmoker"/> 
+</template>
+</category>
+
+<category>
+<pattern>BYE</pattern>
+<template>
+Have a good day. Bye 
+</template>
+</category>
+
+</aiml>
