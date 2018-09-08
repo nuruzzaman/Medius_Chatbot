@@ -26,46 +26,18 @@ class ChatBot:
 
     def response(self, message):
 
-        if len(message) > 60:
+        if len(message) > 200:
             return self.mybot.respond('MAX')
         elif len(message) == 0:
             return self.mybot.respond('MIN')
 
-        if message.find("*") != -1:
-            return self.mybot.respond('filter')
-
         if message == 'exit' or message == 'quit':
-            return self.mybot.respond('Good Bye')
-        
+            return self.mybot.respond('Good Bye')  
         else:
-            ########
-            # AIML #
-            ########
             result = self.mybot.respond(' '.join(jieba.cut(message)))
-
             # Matching mode
             if result[0] != '#':
                 return result
-            # Search mode 
-            elif result.find('#NONE#') != -1:
-                #########
-                # WebQA #
-                #########
-                ans = crawl.search(message)
-                if ans != '':
-                    return ans.encode('utf-8')
-                else:
-                    ################
-                    # Deep learing #
-                    ################
-                    ans = deep.tuling(message)
-                    return ans.encode('utf-8')
-            # Learning mode 
-            elif result.find('#LEARN#') != -1:
-                question = result[8:]
-                answer = message
-                self.save(question, answer)
-                return self.mybot.respond('Already studied.')
             # check for BUG
             else:
                 return self.mybot.respond('No Answer')
