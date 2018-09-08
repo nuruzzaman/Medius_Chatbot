@@ -88,7 +88,7 @@ class ChatBot:
 
 
 if __name__ == '__main__':
-    bot = ChatBot()
-    while True:
+    bot = ChatBot()	
+    while True:		
         message = raw_input('User > ')
         print 'Bot > ' + bot.response(message)
