@@ -2,6 +2,7 @@
 AI Based chatbot using Python and AIML
 
 ### Requirements
+
     Python >= 2.7x
     AIML >= 0.9
 	Flask
@@ -9,7 +10,7 @@ AI Based chatbot using Python and AIML
 	Beautifulsoup4
 	Jieba
 
-## Installation
+### Installation
 
 1. Clone and navigate to chatbot directory.
 
@@ -17,15 +18,28 @@ AI Based chatbot using Python and AIML
     ```bash
     pip install -r requirements.txt
     ```
-3. Run the python script from Medius_Chatbot/core
+3. You're done, chat with your Robot :)
+
+
+### Run in the browser 
+
     ```bash
-    $ cd chatbot-aiml/core
-	$ python web/server.py (nohub)
+    $ cd Medius_Chatbot/core
+	$ python web/server.py
 	
 	> ......
 	> * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
     ```
-5. You're done, chat with your Robot :)
+
+### Run in Command Prompt (CMD)  
+
+    ```bash
+    $ cd Medius_Chatbot/core
+	$ python chaybot.py 
+	
+	> Kernel bootstrap completed
+	User > 
+    ```
 
 ## Screenshot 
    ![alt tag](https://github.com/nuruzzaman/Medius_Chatbot/blob/master/screenshot/chatbot_screen_1.PNG)
