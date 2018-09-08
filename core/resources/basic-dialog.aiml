@@ -46,7 +46,7 @@ When were you born? [Dated dd-mm-yyyy]
 <category>
 <pattern>DATED *</pattern>
 <template>
-<think><set name="birthdate"></set></think>
+<think><set name="birthdate"><star /></set></think>
 Are you a smoker?
 </template>
 </category>
@@ -71,7 +71,7 @@ You are a <get name="isSmoker"/>. Enter "Done" for results. Thank you.
 <pattern>DONE</pattern>
 <template>
 Results: <get name="username"/> was born in <get name="birthdate"/> 
-and is a <get name="gender"/> <get name="isSmoker"/> 
+and is a <get name="gender"/>. He is a <get name="isSmoker"/>.
 </template>
 </category>
 
