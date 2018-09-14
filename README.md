@@ -15,7 +15,7 @@ AI Based chatbot using Python and AIML
 1. Clone and navigate to chatbot directory.
 
 2. Install the required packages. 
-    
+    ```bash 
     $ pip install -r requirements.txt
   
 3. You're done, chat with your Robot :)
@@ -38,11 +38,11 @@ AI Based chatbot using Python and AIML
 	> Kernel bootstrap completed
 	> User > 
 
-## Screenshot 
+### Screenshot 
    ![alt tag](https://github.com/nuruzzaman/Medius_Chatbot/blob/master/screenshot/chatbot_screen_1.PNG) 
 
 
-## Author
+### Author
 
-***[Mohammad Nuruzzaman](https://github.com/nuruzzaman/)***
+***[Mohammad Nuruzzaman](https://github.com/nuruzzaman/)***  
 PhD Candidate at University of New South Wales, Australia 
