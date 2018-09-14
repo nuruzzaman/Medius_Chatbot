@@ -42,8 +42,7 @@ AI Based chatbot using Python and AIML
     ```
 
 ## Screenshot 
-   ![alt tag](https://github.com/nuruzzaman/Medius_Chatbot/blob/master/screenshot/chatbot_screen_1.PNG)
-   ![alt tag](https://github.com/nuruzzaman/Medius_Chatbot/blob/master/screenshot/chatbot_screen_2.PNG)
+   ![alt tag](https://github.com/nuruzzaman/Medius_Chatbot/blob/master/screenshot/chatbot_screen_1.png)
 
 
 ## Author
