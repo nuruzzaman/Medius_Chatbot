@@ -17,7 +17,7 @@ input, button {
 
 .speak_box {
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 0px;
 }
 
 .footer {
@@ -120,7 +120,7 @@ input, button {
     box-sizing: border-box;
     vertical-align: middle;
     display: table-cell;
-    height: 60px;
+    height: 0px;
     word-wrap: break-word;
 	background: #fff;
     text-align: left;
@@ -140,7 +140,7 @@ input, button {
     box-sizing: border-box;
     vertical-align: middle;
     display: table-cell;
-    height: 60px;
+    height: 0px;
 	background: #fff;
     word-wrap: break-word;
 	-webkit-border-radius: 20px;
