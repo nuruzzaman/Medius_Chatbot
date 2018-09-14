@@ -14,32 +14,28 @@ AI Based chatbot using Python and AIML
 
 1. Clone and navigate to chatbot directory.
 
-2. Install the required packages.
-    ```bash
+2. Install the required packages. 
     pip install -r requirements.txt
-    ```
+  
 3. You're done, chat with your Robot :)
 
 
 ### Run in the browser 
 
-    ```bash
     $ cd Medius_Chatbot/core
 	$ python web/server.py
 	
 	> ......
 	> * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-    ```
+
 
 ### Run in Command Prompt (CMD)  
 
-    ```bash
     $ cd Medius_Chatbot/core
 	$ python chaybot.py 
 	
 	> Kernel bootstrap completed
 	> User > 
-    ```
 
 ## Screenshot 
    ![alt tag](https://github.com/nuruzzaman/Medius_Chatbot/blob/master/screenshot/chatbot_screen_1.PNG) 
