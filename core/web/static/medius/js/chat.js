@@ -5,7 +5,6 @@ function chat(message) {
         data: {"message": message},
         success: function (data) {
             var ans = '<div class="answer">'
-                + '<div class="icon left"><img src="images/bot.png"/></div>'
                 + '<div class="answer_text"><p style="white-space: pre-line;">' + data + '</p><i></i>'
                 + '</div></div>';
 
@@ -38,7 +37,6 @@ function send_message() {
         $('body').css('background-image', 'url(/images/bg.jpg)');
     } else {
         var str = '<div class="question">'
-            + '<div class="icon right"><img src="images/user.png"/></div>'
             + '<div class="question_text clear"><p style="white-space: pre-line;">' + text + '</p><i></i>'
             + '</div></div>';
 
